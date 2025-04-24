@@ -29,3 +29,49 @@
 - Output :
 - Contstraints :
 - Capability and Reminder :  Info about the tools it have
+
+## Build Coding Agents
+
+### Thinking
+
+- Logical
+- Analytical
+- Computational
+- Procedural
+
+### Frameworks
+
+### Checkpoints / Versions
+
+### Debugging
+
+### Context
+
+---
+
+## ReAct Loop
+
+- Thought --> Action --> Observation
+- Agent actions should be in a json format. {tool_name: ... , args: ...} --> Tool calling. Tool calling creates more steps and more tokens.
+- Code Agents use a code format for taking actions like
+  ```py
+  answer = fn_name(**kwargs)
+  print(answer)
+  ```
+
+### Security threats using code agents (Smol agents)
+
+- LLM error
+- Supply chain attack
+- Prompt injections
+
+These attacks can harm your system. Safe gaurds
+
+- Any undefined command is ignored
+- Import securitization
+- prevent infinite loops
+
+- Run code snippets in a sandbox
+
+## Monitoring Agents
+
